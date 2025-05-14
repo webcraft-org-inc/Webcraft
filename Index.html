@@ -1,12 +1,11 @@
 <!DOCTYPE html>
   <!-- Made by "@oem:(" !-->
-     <title>Webcraft</title>
 	   <link rel="icon" href="Eaglercraft.jpg" type="image/x-icon">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button to Link</title>
+    <title>WebCraft</title>
     <script>
         function goToLink() {
             // Get the link from the dropdown
@@ -17,7 +16,7 @@
                 // Open the link
                 window.location.href = selectedValue;
             } else {
-                alert("Please select a link from the dropdown.");
+                alert("Sorry something went wrong please try again.");
             }
         }
     </script>
@@ -164,15 +163,15 @@
 </head>
 <body>
     <p>
-        Select a link and click the button:
+        Power by Eaglercraft
         <div class="custom-select-wrapper" id="mySelectWrapper">
             <div class="custom-select-trigger" id="mySelectTrigger">
-                <span>Select a link...</span>
+                <span>Select version</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
             <div class="custom-options" id="mySelectOptions">
                 <select id="mySelect" class="hidden">
-                    <option value="">Select a link...</option>
+                    <option value="">Select version</option>
                     <option value="Eaglercraft_1.12_Offline_en_US.html">Eaglercraft 1.12</option>
                     <option value="EaglercraftX_1.8_u50_Offline_Signed.html">Eaglercraftx 1.8</option>
                 </select>
@@ -183,7 +182,7 @@
             </div>
         </div>
     </p>
-    <button onclick="goToLink()">Go to Link</button>
+    <button onclick="goToLink()">Boot Webcraft</button>
 
 
     <script>
@@ -214,8 +213,8 @@
                 selectWrapper.classList.remove('open');
 
                 // Show/hide links based on selection
-                link1Element.style.display = value === "Eaglercraft_1.12_Offline_en_US.html" ? "block" : "none";
-                link2Element.style.display = value === "EaglercraftX_1.8_u50_Offline_Signed.html" ? "block" : "none";
+                link1Element.style.display = value === "Eaglercraft_1.12.html" ? "block" : "none";
+                link2Element.style.display = value === "EaglercraftX_1.8.html" ? "block" : "none";
 
                 selectElement.dispatchEvent(new Event('change'));
             }
